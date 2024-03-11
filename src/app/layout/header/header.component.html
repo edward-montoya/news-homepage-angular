@@ -1,0 +1,9 @@
+<header class="header">
+    <app-nav-menu [visible]="visible" (closeEmit)="close()" />
+    <div class="header__container">
+      <img class="header__image" src="/assets/images/logo.svg" alt="application logo" />
+      <button (click)="open()" class="header__menu">
+        <img src="/assets/images/icon-menu.svg" alt="" />
+      </button>
+    </div>
+</header>

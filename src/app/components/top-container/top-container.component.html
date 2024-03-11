@@ -1,0 +1,12 @@
+<section class="top">
+    <h2 class="sr-only">Top posts</h2>
+    <ol class="top__list">
+      <li class="top__item" *ngFor="let item of news | async">
+        <img class="top__image" [src]="item.images?.desktop" [alt]="item.images?.alt" />
+        <h3 class="top__title">
+          <a [href]="item.url">{{ item.title }}</a>
+        </h3>
+        <p class="top__description">{{ item.description }}</p>
+      </li>
+    </ol>
+  </section>

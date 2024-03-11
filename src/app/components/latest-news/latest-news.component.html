@@ -1,0 +1,11 @@
+<section class="news">
+    <h2 class="news__title news__title--main">New</h2>
+    <ul class="news__container">
+      <li *ngFor="let article of news | async" class="news__item">
+        <h3 class="news__title">
+          <a [href]="article.url">{{article.title}}</a>
+        </h3>
+        <p class="news__description">{{article.description}}</p>
+      </li>
+    </ul>
+  </section>

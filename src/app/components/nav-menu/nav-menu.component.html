@@ -1,0 +1,14 @@
+<nav class="nav" [ngClass]="{'nav--visible': visible}">
+    <div class="nav__container">
+      <button (click)="close()" class="nav__close">
+        <img src="/assets/images/icon-menu-close.svg" alt="" />
+      </button>
+      <ul class="nav__menu">
+        <li><a href="/home" aria-label="Homepage">Home</a></li>
+        <li><a href="/new" aria-label="New posts">New</a></li>
+        <li><a href="/popular" aria-label="Popular posts">Popular</a></li>
+        <li><a href="/treding" aria-label="Trending posts">Trending</a></li>
+        <li><a href="/categories">Categories</a></li>
+      </ul>
+    </div>
+  </nav>
