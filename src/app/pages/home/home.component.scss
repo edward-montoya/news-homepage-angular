@@ -1,0 +1,17 @@
+@media screen and (min-width: 1024px) {
+    .home {
+      display: grid;
+      grid-template-areas: "banner banner banner news news" "top top top top top";
+      column-gap: 2rem;
+      margin: 0 auto;
+    }
+    app-banner  {
+      grid-area: banner;
+    }
+    app-latest-news  {
+      grid-area: news;
+    }
+    app-top-container  {
+      grid-area: top;
+    }
+}

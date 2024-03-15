@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BannerComponent } from './components/banner/banner.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { TopContainerComponent } from './components/top-container/top-container.component';
-import { LatestNewsComponent } from './components/latest-news/latest-news.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BannerComponent, HeaderComponent, TopContainerComponent, LatestNewsComponent],
+  imports: [RouterOutlet, MainLayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
